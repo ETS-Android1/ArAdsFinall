@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1044925520499",
+    "project_id": "arads-8d2e5",
+    "storage_bucket": "arads-8d2e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044925520499:android:c5560cc228d341f5692806",
+        "android_client_info": {
+          "package_name": "com.example.arads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044925520499-ltnkf09sbmpc2qo9p7u9f7suh1nhdil9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtC8TNJgNGrE7NBGaTGTsdTlw6bQngxQI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044925520499-ltnkf09sbmpc2qo9p7u9f7suh1nhdil9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
