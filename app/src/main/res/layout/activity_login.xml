@@ -13,8 +13,7 @@
         android:id="@+id/logo_image"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:src="@drawable/qr_code_scanning_with_characters"
-        android:transitionName="logo_image"/>
+        android:src="@drawable/qr_code_scanning_with_characters" />
 
 
     <TextView
