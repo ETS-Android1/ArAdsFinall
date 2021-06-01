@@ -2,6 +2,7 @@ package com.example.arads;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,11 +32,14 @@ public class SignUp extends AppCompatActivity {
         regEmail = findViewById(R.id.reg_email);
         regPhoneNum = findViewById(R.id.reg_phoneNum);
         regPassword = findViewById(R.id.reg_password);
+
+        //Hooks to activity in activity_dashboard.xml
         regSignup = findViewById(R.id.reg_signup);
         toLoginScreen = findViewById(R.id.to_login_screen);
 
+
         //Save data in firebase on completing registration
-        toLoginScreen.setOnClickListener(new View.OnClickListener() {
+        regSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 rootNode = FirebaseDatabase.getInstance();
@@ -50,10 +54,21 @@ public class SignUp extends AppCompatActivity {
 
                 UserHelperClass helperClass = new UserHelperClass();
 
+                Intent intent = new Intent(SignUp.this, Dashboard.class);
+                startActivity(intent);
+
                 reference.child(phoneNum).setValue(helperClass);
                 Toast.makeText(SignUp.this, "Firebase connection successful", Toast.LENGTH_LONG).show();
             }
         }); //Register Button method end
+
+        toLoginScreen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUp.this, Login.class);
+                startActivity(intent);
+            }
+        });
     } //On create method end
 
     private Boolean validateName() {

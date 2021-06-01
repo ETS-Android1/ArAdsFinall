@@ -206,7 +206,8 @@
             android:background="#0000"
             android:fontFamily="@font/bungee"
             android:text="Update"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:id="@+id/to_dashboard"/>
 
     </LinearLayout>
 
